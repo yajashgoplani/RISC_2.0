@@ -1,0 +1,45 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 03/29/2023 11:03:28 AM
+// Design Name: 
+// Module Name: control
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module control(
+    input [6:0] opcode,func7,
+    input[2:0] func3,
+    input clk,
+    output reg [4:0] alu_ctrl,output reg control,reg regwrite
+    );
+    always@(opcode,func3,func7)
+    begin
+        case({func7,func3,opcode})
+        17'h00033: begin alu_ctrl<=5'b00010;control<=1; regwrite=1;  end  //add
+        17'h00333: begin alu_ctrl<=5'b00001; control<=1;regwrite=1; end  // or
+        17'h08033: begin alu_ctrl<=5'b00100; control<=1;regwrite=1; end  // sub
+        17'h000b3: begin alu_ctrl<=5'b00011; control<=1;regwrite=1; end  // sll
+        17'h00133: begin alu_ctrl<=5'b01000; control<=1;regwrite=1; end  // slt
+        17'h00233: begin alu_ctrl<=5'b00111; control<=1;regwrite=1; end  // xor
+        17'h002b3: begin alu_ctrl<=5'b00101; control<=1;regwrite=1; end  // sra
+        17'h003b3: begin alu_ctrl<=5'b00000; control<=1;regwrite=1; end  // xor
+        17'h00000: begin alu_ctrl<=5'b00000;control<=1; regwrite=0; end
+        17'h0007f: begin alu_ctrl<=5'b11111;control<=0; regwrite=0; end 
+        default: begin alu_ctrl<=5'b11111; control<=0;regwrite=0; end
+        endcase
+    end
+endmodule
