@@ -10,10 +10,12 @@ module pc_test(
     wire [31:0] write_data;
     wire [4:0] reg1,reg2,reg3,alu_ctrl;
     wire [31:0] reg_data1,reg_data2,out,pc,inst_code;
-    wire zero_flag,control1,regwrite;
+    wire zero_flag,regwrite;
+    wire [1:0] control1;
     wire [6:0] opcode,func7;
-    wire [2:0] func3;
-    pc_block pcc(reset,clk,reg1,reg2,reg3,reg_data1,reg_data2,out,pc,write_data,inst_code,zero_flag,control1,regwrite,alu_ctrl,opcode,func7,func3);
+    wire [2:0] func3,alu_op;
+    wire [31:0] reg_write;
+    pc_block pcc(reset,clk,reg1,reg2,reg3,reg_data1,reg_data2,out,pc,write_data,inst_code,zero_flag,regwrite,control1,alu_ctrl,opcode,func7,func3,alu_op,reg_write);
     
     initial 
     begin
@@ -27,6 +29,18 @@ module pc_test(
         #32 reset=1;//#2 regwrite=1;
        // #5 regwrite<=0;
        // #30 control=0;
-        #100 $finish;
+        #120 $finish;
     end    
+//    wire [31:0] out;
+//    reg [19:0] imm;
+//    signextender ext(imm,out);
+    
+//    initial 
+//    begin
+//       imm=20'hffff8;
+//        #10 imm=20'h00008;
+//        #10 $finish;
+//    end    
+
+
 endmodule

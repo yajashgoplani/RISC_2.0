@@ -80,15 +80,29 @@ module Instruction_mem(
               Memory[35] = 8'h00;
               Memory[34] = 8'h34;
               Memory[33] = 8'hf4;
-              Memory[32] = 8'h33;  
-//            No Operation
-              Memory[39] = 8'h00;
+              Memory[32] = 8'h33;
+              
+              // jal Operation
+              Memory[39] = 8'h01;
               Memory[38] = 8'h00;
-              Memory[37] = 8'h00;
-              Memory[36] = 8'h7f;              
+              Memory[37] = 8'h03;
+              Memory[36] = 8'hEF;    
+//            No Operation
+              Memory[43] = 8'h00;
+              Memory[42] = 8'h00;
+              Memory[41] = 8'h00;
+              Memory[40] = 8'h7f;              
               
-              
-              
+              // add Operation
+              Memory[55] = 8'h00;
+              Memory[54] = 8'h94;
+              Memory[53] = 8'h03;
+              Memory[52] = 8'h33;
+//            No Operation
+              Memory[59] = 8'h00;
+              Memory[58] = 8'h00;
+              Memory[57] = 8'h00;
+              Memory[56] = 8'h7f;                 
 //            // Setting 32-bit instruction: sub t2, s2, s3 => 0x413903b3
 //            Memory[7] = 8'h41;
 //            Memory[6] = 8'h39;

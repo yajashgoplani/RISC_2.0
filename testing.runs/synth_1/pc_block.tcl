@@ -71,6 +71,7 @@ proc create_report { reportName command } {
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param synth.incrementalSynthesisCache {C:/Users/Yajash Goplani/Dropbox/My PC (LAPTOP-DVVUGS3O)/Downloads/.Xil/Vivado-28004-YAJASH-LAPPY/incrSyn}
+set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
@@ -88,10 +89,17 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
+  D:/RCLabProjects/testing/testing.srcs/sources_1/new/ALU.v
   D:/RCLabProjects/testing/testing.srcs/sources_1/new/Instruction_mem.v
+  D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v
+  D:/RCLabProjects/testing/testing.srcs/sources_1/new/alu_control.v
+  D:/RCLabProjects/testing/testing.srcs/sources_1/new/control.v
   D:/RCLabProjects/testing/testing.srcs/sources_1/new/dff.v
   D:/RCLabProjects/testing/testing.srcs/sources_1/new/instruction_decoder.v
+  D:/RCLabProjects/testing/testing.srcs/sources_1/new/mux2.v
+  D:/RCLabProjects/testing/testing.srcs/sources_1/new/mux4.v
   D:/RCLabProjects/testing/testing.srcs/sources_1/new/pc_comb.v
+  D:/RCLabProjects/testing/testing.srcs/sources_1/new/signextender.v
   D:/RCLabProjects/testing/testing.srcs/sources_1/new/pc_block.v
 }
 OPTRACE "Adding files" END { }

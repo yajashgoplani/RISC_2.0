@@ -16,41 +16,111 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 21164
+INFO: [Synth 8-7075] Helper process launched with PID 58036
+WARNING: [Synth 8-2611] redeclaration of ansi port pc is not allowed [D:/RCLabProjects/testing/testing.srcs/sources_1/new/pc_block.v:15]
+WARNING: [Synth 8-2611] redeclaration of ansi port inst_code is not allowed [D:/RCLabProjects/testing/testing.srcs/sources_1/new/pc_block.v:15]
+WARNING: [Synth 8-2611] redeclaration of ansi port opcode is not allowed [D:/RCLabProjects/testing/testing.srcs/sources_1/new/pc_block.v:16]
+WARNING: [Synth 8-2611] redeclaration of ansi port func7 is not allowed [D:/RCLabProjects/testing/testing.srcs/sources_1/new/pc_block.v:16]
+WARNING: [Synth 8-2611] redeclaration of ansi port reg1 is not allowed [D:/RCLabProjects/testing/testing.srcs/sources_1/new/pc_block.v:17]
+WARNING: [Synth 8-2611] redeclaration of ansi port reg2 is not allowed [D:/RCLabProjects/testing/testing.srcs/sources_1/new/pc_block.v:17]
+WARNING: [Synth 8-2611] redeclaration of ansi port reg3 is not allowed [D:/RCLabProjects/testing/testing.srcs/sources_1/new/pc_block.v:17]
+WARNING: [Synth 8-2611] redeclaration of ansi port alu_ctrl is not allowed [D:/RCLabProjects/testing/testing.srcs/sources_1/new/pc_block.v:17]
+WARNING: [Synth 8-2611] redeclaration of ansi port func3 is not allowed [D:/RCLabProjects/testing/testing.srcs/sources_1/new/pc_block.v:18]
+WARNING: [Synth 8-2611] redeclaration of ansi port reg_data1 is not allowed [D:/RCLabProjects/testing/testing.srcs/sources_1/new/pc_block.v:19]
+WARNING: [Synth 8-2611] redeclaration of ansi port reg_data2 is not allowed [D:/RCLabProjects/testing/testing.srcs/sources_1/new/pc_block.v:19]
+WARNING: [Synth 8-2611] redeclaration of ansi port control is not allowed [D:/RCLabProjects/testing/testing.srcs/sources_1/new/pc_block.v:20]
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1004.336 ; gain = 0.000
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1004.840 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'pc_block' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/pc_block.v:3]
 INFO: [Synth 8-6157] synthesizing module 'pc_comb' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/pc_comb.v:4]
-INFO: [Synth 8-6155] done synthesizing module 'pc_comb' (1#1) [D:/RCLabProjects/testing/testing.srcs/sources_1/new/pc_comb.v:4]
+INFO: [Synth 8-6157] synthesizing module 'mux4' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/mux4.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux4' (1#1) [D:/RCLabProjects/testing/testing.srcs/sources_1/new/mux4.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'pc_comb' (2#1) [D:/RCLabProjects/testing/testing.srcs/sources_1/new/pc_comb.v:4]
 INFO: [Synth 8-6157] synthesizing module 'dff' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/dff.v:2]
-INFO: [Synth 8-6155] done synthesizing module 'dff' (2#1) [D:/RCLabProjects/testing/testing.srcs/sources_1/new/dff.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'dff' (3#1) [D:/RCLabProjects/testing/testing.srcs/sources_1/new/dff.v:2]
 INFO: [Synth 8-6157] synthesizing module 'Instruction_mem' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/Instruction_mem.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'Instruction_mem' (3#1) [D:/RCLabProjects/testing/testing.srcs/sources_1/new/Instruction_mem.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Instruction_mem' (4#1) [D:/RCLabProjects/testing/testing.srcs/sources_1/new/Instruction_mem.v:23]
 INFO: [Synth 8-6157] synthesizing module 'instruction_decoder' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/instruction_decoder.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'instruction_decoder' (4#1) [D:/RCLabProjects/testing/testing.srcs/sources_1/new/instruction_decoder.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'pc_block' (5#1) [D:/RCLabProjects/testing/testing.srcs/sources_1/new/pc_block.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'instruction_decoder' (5#1) [D:/RCLabProjects/testing/testing.srcs/sources_1/new/instruction_decoder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'signextender' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/signextender.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'signextender' (6#1) [D:/RCLabProjects/testing/testing.srcs/sources_1/new/signextender.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RegisterFile' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'RegisterFile' (7#1) [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:2]
+INFO: [Synth 8-6157] synthesizing module 'control' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/control.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'control' (8#1) [D:/RCLabProjects/testing/testing.srcs/sources_1/new/control.v:23]
+INFO: [Synth 8-6157] synthesizing module 'alu_control' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/alu_control.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/RCLabProjects/testing/testing.srcs/sources_1/new/alu_control.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'alu_control' (9#1) [D:/RCLabProjects/testing/testing.srcs/sources_1/new/alu_control.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/mux2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (10#1) [D:/RCLabProjects/testing/testing.srcs/sources_1/new/mux2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/ALU.v:22]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/RCLabProjects/testing/testing.srcs/sources_1/new/ALU.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (11#1) [D:/RCLabProjects/testing/testing.srcs/sources_1/new/ALU.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'pc_block' (12#1) [D:/RCLabProjects/testing/testing.srcs/sources_1/new/pc_block.v:3]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1004.336 ; gain = 0.000
+Finished Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1004.840 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1004.336 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1004.840 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1004.336 ; gain = 0.000
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1004.840 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg484-1
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[11]' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/Instruction_mem.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[8]' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/Instruction_mem.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[6]' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/Instruction_mem.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[39]' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/Instruction_mem.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[36]' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/Instruction_mem.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[34]' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/Instruction_mem.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[33]' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/Instruction_mem.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[32]' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/Instruction_mem.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[29]' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/Instruction_mem.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[25]' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/Instruction_mem.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[21]' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/Instruction_mem.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[17]' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/Instruction_mem.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[15]' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/Instruction_mem.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[13]' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/Instruction_mem.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[9]' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/Instruction_mem.v:33]
 WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[5]' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/Instruction_mem.v:33]
-WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[4]' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/Instruction_mem.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_memory_reg[31]' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_memory_reg[30]' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_memory_reg[29]' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_memory_reg[28]' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_memory_reg[27]' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_memory_reg[26]' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_memory_reg[25]' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_memory_reg[24]' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_memory_reg[23]' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_memory_reg[22]' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_memory_reg[21]' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_memory_reg[20]' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_memory_reg[19]' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_memory_reg[18]' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_memory_reg[17]' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_memory_reg[16]' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_memory_reg[15]' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_memory_reg[14]' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_memory_reg[13]' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_memory_reg[12]' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_memory_reg[11]' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_memory_reg[10]' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_memory_reg[9]' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_memory_reg[8]' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_memory_reg[7]' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_memory_reg[6]' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_memory_reg[5]' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_memory_reg[4]' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_memory_reg[3]' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_memory_reg[2]' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_memory_reg[1]' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_memory_reg[0]' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+WARNING: [Synth 8-327] inferring latch for variable 'alu_ctrl_reg' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/alu_control.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'alu_result_reg' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/ALU.v:33]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1004.336 ; gain = 0.000
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1004.840 ; gain = 0.000
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
@@ -58,9 +128,23 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input   32 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 2     
+	   3 Input   32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
 +---Registers : 
 	               32 Bit    Registers := 1     
++---Multipliers : 
+	              32x32  Multipliers := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 4     
+	  11 Input   32 Bit        Muxes := 1     
+	  10 Input    5 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 33    
+	   3 Input    1 Bit        Muxes := 1     
+	  11 Input    1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -77,21 +161,51 @@ No constraint files found.
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
+DSP Report: Generating DSP alu/alu_result0, operation Mode is: A*B.
+DSP Report: operator alu/alu_result0 is absorbed into DSP alu/alu_result0.
+DSP Report: operator alu/alu_result0 is absorbed into DSP alu/alu_result0.
+DSP Report: Generating DSP alu/alu_result0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator alu/alu_result0 is absorbed into DSP alu/alu_result0.
+DSP Report: operator alu/alu_result0 is absorbed into DSP alu/alu_result0.
+DSP Report: Generating DSP alu/alu_result0, operation Mode is: A*B.
+DSP Report: operator alu/alu_result0 is absorbed into DSP alu/alu_result0.
+DSP Report: operator alu/alu_result0 is absorbed into DSP alu/alu_result0.
+DSP Report: Generating DSP alu/alu_result0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator alu/alu_result0 is absorbed into DSP alu/alu_result0.
+DSP Report: operator alu/alu_result0 is absorbed into DSP alu/alu_result0.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:28 . Memory (MB): peak = 1004.336 ; gain = 0.000
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:25 . Memory (MB): peak = 1004.840 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping	Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|pc_block    | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pc_block    | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pc_block    | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pc_block    | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:28 . Memory (MB): peak = 1004.336 ; gain = 0.000
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:25 . Memory (MB): peak = 1004.840 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:28 . Memory (MB): peak = 1004.336 ; gain = 0.000
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:26 . Memory (MB): peak = 1004.840 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -109,37 +223,145 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 1004.336 ; gain = 0.000
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:30 . Memory (MB): peak = 1004.840 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 1004.336 ; gain = 0.000
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:30 . Memory (MB): peak = 1004.840 ; gain = 0.000
 ---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][31] with 1st driver pin 'registerFile/reg_memory_reg[31][31]__0/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:24]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][31] with 2nd driver pin 'registerFile/reg_memory_reg[31][31]/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][30] with 1st driver pin 'registerFile/reg_memory_reg[31][30]__0/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:24]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][30] with 2nd driver pin 'registerFile/reg_memory_reg[31][30]/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][29] with 1st driver pin 'registerFile/reg_memory_reg[31][29]__0/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:24]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][29] with 2nd driver pin 'registerFile/reg_memory_reg[31][29]/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][28] with 1st driver pin 'registerFile/reg_memory_reg[31][28]__0/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:24]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][28] with 2nd driver pin 'registerFile/reg_memory_reg[31][28]/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][27] with 1st driver pin 'registerFile/reg_memory_reg[31][27]__0/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:24]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][27] with 2nd driver pin 'registerFile/reg_memory_reg[31][27]/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][26] with 1st driver pin 'registerFile/reg_memory_reg[31][26]__0/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:24]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][26] with 2nd driver pin 'registerFile/reg_memory_reg[31][26]/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][25] with 1st driver pin 'registerFile/reg_memory_reg[31][25]__0/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:24]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][25] with 2nd driver pin 'registerFile/reg_memory_reg[31][25]/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][24] with 1st driver pin 'registerFile/reg_memory_reg[31][24]__0/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:24]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][24] with 2nd driver pin 'registerFile/reg_memory_reg[31][24]/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][23] with 1st driver pin 'registerFile/reg_memory_reg[31][23]__0/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:24]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][23] with 2nd driver pin 'registerFile/reg_memory_reg[31][23]/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][22] with 1st driver pin 'registerFile/reg_memory_reg[31][22]__0/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:24]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][22] with 2nd driver pin 'registerFile/reg_memory_reg[31][22]/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][21] with 1st driver pin 'registerFile/reg_memory_reg[31][21]__0/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:24]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][21] with 2nd driver pin 'registerFile/reg_memory_reg[31][21]/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][20] with 1st driver pin 'registerFile/reg_memory_reg[31][20]__0/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:24]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][20] with 2nd driver pin 'registerFile/reg_memory_reg[31][20]/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][19] with 1st driver pin 'registerFile/reg_memory_reg[31][19]__0/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:24]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][19] with 2nd driver pin 'registerFile/reg_memory_reg[31][19]/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][18] with 1st driver pin 'registerFile/reg_memory_reg[31][18]__0/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:24]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][18] with 2nd driver pin 'registerFile/reg_memory_reg[31][18]/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][17] with 1st driver pin 'registerFile/reg_memory_reg[31][17]__0/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:24]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][17] with 2nd driver pin 'registerFile/reg_memory_reg[31][17]/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][16] with 1st driver pin 'registerFile/reg_memory_reg[31][16]__0/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:24]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][16] with 2nd driver pin 'registerFile/reg_memory_reg[31][16]/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][15] with 1st driver pin 'registerFile/reg_memory_reg[31][15]__0/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:24]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][15] with 2nd driver pin 'registerFile/reg_memory_reg[31][15]/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][14] with 1st driver pin 'registerFile/reg_memory_reg[31][14]__0/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:24]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][14] with 2nd driver pin 'registerFile/reg_memory_reg[31][14]/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][13] with 1st driver pin 'registerFile/reg_memory_reg[31][13]__0/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:24]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][13] with 2nd driver pin 'registerFile/reg_memory_reg[31][13]/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][12] with 1st driver pin 'registerFile/reg_memory_reg[31][12]__0/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:24]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][12] with 2nd driver pin 'registerFile/reg_memory_reg[31][12]/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][11] with 1st driver pin 'registerFile/reg_memory_reg[31][11]__0/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:24]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][11] with 2nd driver pin 'registerFile/reg_memory_reg[31][11]/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][10] with 1st driver pin 'registerFile/reg_memory_reg[31][10]__0/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:24]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][10] with 2nd driver pin 'registerFile/reg_memory_reg[31][10]/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][9] with 1st driver pin 'registerFile/reg_memory_reg[31][9]__0/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:24]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][9] with 2nd driver pin 'registerFile/reg_memory_reg[31][9]/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][8] with 1st driver pin 'registerFile/reg_memory_reg[31][8]__0/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:24]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][8] with 2nd driver pin 'registerFile/reg_memory_reg[31][8]/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][7] with 1st driver pin 'registerFile/reg_memory_reg[31][7]__0/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:24]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][7] with 2nd driver pin 'registerFile/reg_memory_reg[31][7]/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][6] with 1st driver pin 'registerFile/reg_memory_reg[31][6]__0/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:24]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][6] with 2nd driver pin 'registerFile/reg_memory_reg[31][6]/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][5] with 1st driver pin 'registerFile/reg_memory_reg[31][5]__0/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:24]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][5] with 2nd driver pin 'registerFile/reg_memory_reg[31][5]/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][4] with 1st driver pin 'registerFile/reg_memory_reg[31][4]__0/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:24]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][4] with 2nd driver pin 'registerFile/reg_memory_reg[31][4]/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][3] with 1st driver pin 'registerFile/reg_memory_reg[31][3]__0/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:24]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][3] with 2nd driver pin 'registerFile/reg_memory_reg[31][3]/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][2] with 1st driver pin 'registerFile/reg_memory_reg[31][2]__0/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:24]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][2] with 2nd driver pin 'registerFile/reg_memory_reg[31][2]/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][1] with 1st driver pin 'registerFile/reg_memory_reg[31][1]__0/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:24]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][1] with 2nd driver pin 'registerFile/reg_memory_reg[31][1]/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][0] with 1st driver pin 'registerFile/reg_memory_reg[31][0]__0/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:24]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[31][0] with 2nd driver pin 'registerFile/reg_memory_reg[31][0]/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[30][31] with 1st driver pin 'registerFile/reg_memory_reg[30][31]__0/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:24]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[30][31] with 2nd driver pin 'registerFile/reg_memory_reg[30][31]/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[30][30] with 1st driver pin 'registerFile/reg_memory_reg[30][30]__0/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:24]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[30][30] with 2nd driver pin 'registerFile/reg_memory_reg[30][30]/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[30][29] with 1st driver pin 'registerFile/reg_memory_reg[30][29]__0/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:24]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[30][29] with 2nd driver pin 'registerFile/reg_memory_reg[30][29]/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[30][28] with 1st driver pin 'registerFile/reg_memory_reg[30][28]__0/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:24]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[30][28] with 2nd driver pin 'registerFile/reg_memory_reg[30][28]/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[30][27] with 1st driver pin 'registerFile/reg_memory_reg[30][27]__0/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:24]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[30][27] with 2nd driver pin 'registerFile/reg_memory_reg[30][27]/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[30][26] with 1st driver pin 'registerFile/reg_memory_reg[30][26]__0/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:24]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[30][26] with 2nd driver pin 'registerFile/reg_memory_reg[30][26]/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[30][25] with 1st driver pin 'registerFile/reg_memory_reg[30][25]__0/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:24]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[30][25] with 2nd driver pin 'registerFile/reg_memory_reg[30][25]/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[30][24] with 1st driver pin 'registerFile/reg_memory_reg[30][24]__0/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:24]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[30][24] with 2nd driver pin 'registerFile/reg_memory_reg[30][24]/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[30][23] with 1st driver pin 'registerFile/reg_memory_reg[30][23]__0/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:24]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[30][23] with 2nd driver pin 'registerFile/reg_memory_reg[30][23]/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[30][22] with 1st driver pin 'registerFile/reg_memory_reg[30][22]__0/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:24]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[30][22] with 2nd driver pin 'registerFile/reg_memory_reg[30][22]/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[30][21] with 1st driver pin 'registerFile/reg_memory_reg[30][21]__0/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:24]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[30][21] with 2nd driver pin 'registerFile/reg_memory_reg[30][21]/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[30][20] with 1st driver pin 'registerFile/reg_memory_reg[30][20]__0/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:24]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[30][20] with 2nd driver pin 'registerFile/reg_memory_reg[30][20]/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[30][19] with 1st driver pin 'registerFile/reg_memory_reg[30][19]__0/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:24]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[30][19] with 2nd driver pin 'registerFile/reg_memory_reg[30][19]/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[30][18] with 1st driver pin 'registerFile/reg_memory_reg[30][18]__0/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:24]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[30][18] with 2nd driver pin 'registerFile/reg_memory_reg[30][18]/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[30][17] with 1st driver pin 'registerFile/reg_memory_reg[30][17]__0/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:24]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[30][17] with 2nd driver pin 'registerFile/reg_memory_reg[30][17]/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[30][16] with 1st driver pin 'registerFile/reg_memory_reg[30][16]__0/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:24]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[30][16] with 2nd driver pin 'registerFile/reg_memory_reg[30][16]/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[30][15] with 1st driver pin 'registerFile/reg_memory_reg[30][15]__0/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:24]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[30][15] with 2nd driver pin 'registerFile/reg_memory_reg[30][15]/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[30][14] with 1st driver pin 'registerFile/reg_memory_reg[30][14]__0/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:24]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin registerFile/reg_memory[30][14] with 2nd driver pin 'registerFile/reg_memory_reg[30][14]/Q' [D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v:31]
+INFO: [Common 17-14] Message 'Synth 8-6859' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|     1024|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 1004.336 ; gain = 0.000
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:30 . Memory (MB): peak = 1004.840 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 1004.336 ; gain = 0.000
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 1004.840 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 1004.336 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 1004.840 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 1004.336 ; gain = 0.000
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 1004.840 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -152,48 +374,60 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+-------+------+
-|      |Cell   |Count |
-+------+-------+------+
-|1     |BUFG   |     1|
-|2     |CARRY4 |     1|
-|3     |LUT1   |     1|
-|4     |LUT2   |     1|
-|5     |LUT3   |     2|
-|6     |LUT4   |    10|
-|7     |FDCE   |     4|
-|8     |IBUF   |     3|
-|9     |OBUF   |    33|
-+------+-------+------+
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     3|
+|2     |CARRY4  |    32|
+|3     |DSP48E1 |     3|
+|4     |LUT1    |     3|
+|5     |LUT2    |   124|
+|6     |LUT3    |     8|
+|7     |LUT4    |    58|
+|8     |LUT5    |    50|
+|9     |LUT6    |   736|
+|10    |MUXF7   |   162|
+|11    |MUXF8   |    21|
+|12    |FDCE    |    31|
+|13    |FDRE    |  1024|
+|14    |LD      |  1062|
+|15    |IBUF    |     2|
+|16    |OBUF    |   204|
+|17    |OBUFT   |    32|
++------+--------+------+
 
 Report Instance Areas: 
-+------+---------+----------------+------+
-|      |Instance |Module          |Cells |
-+------+---------+----------------+------+
-|1     |top      |                |    56|
-|2     |  d      |dff             |     8|
-|3     |  mem    |Instruction_mem |    11|
-+------+---------+----------------+------+
++------+---------------+-------------+------+
+|      |Instance       |Module       |Cells |
++------+---------------+-------------+------+
+|1     |top            |             |  3555|
+|2     |  alu          |ALU          |   113|
+|3     |  alu_ct       |alu_control  |    75|
+|4     |  d            |dff          |  1075|
+|5     |  registerFile |RegisterFile |  2048|
++------+---------------+-------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 1004.336 ; gain = 0.000
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 1004.840 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 1004.336 ; gain = 0.000
-Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 1004.336 ; gain = 0.000
+Synthesis finished with 0 errors, 2048 critical warnings and 59 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 1004.840 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 1004.840 ; gain = 0.000
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1004.336 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 1004.840 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1280 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1004.336 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1004.840 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
+  A total of 1062 instances were transformed.
+  LD => LDCE: 1062 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-22 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+39 Infos, 59 Warnings, 100 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:40 . Memory (MB): peak = 1004.336 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:37 . Memory (MB): peak = 1004.840 ; gain = 0.000
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
 INFO: [Common 17-1381] The checkpoint 'D:/RCLabProjects/testing/testing.runs/synth_1/pc_block.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file pc_block_utilization_synth.rpt -pb pc_block_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Mar 29 10:16:28 2023...
+INFO: [Common 17-206] Exiting Vivado at Sun Apr  2 16:43:48 2023...
