@@ -1,5 +1,7 @@
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/RCLabProjects/testing/testing.srcs/sources_1/new/ALU.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/RCLabProjects/testing/testing.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/RCLabProjects/testing/testing.srcs/sources_1/new/Instruction_mem.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Instruction_mem
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/RCLabProjects/testing/testing.srcs/sources_1/new/RegisterFile.v" into library xil_defaultlib
@@ -7,9 +9,10 @@ INFO: [VRFC 10-311] analyzing module RegisterFile
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/RCLabProjects/testing/testing.srcs/sources_1/new/alu_control.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module alu_control
 WARNING: [VRFC 10-2096] empty statement in sequential block [D:/RCLabProjects/testing/testing.srcs/sources_1/new/alu_control.v:31]
-WARNING: [VRFC 10-2096] empty statement in sequential block [D:/RCLabProjects/testing/testing.srcs/sources_1/new/alu_control.v:48]
+WARNING: [VRFC 10-2096] empty statement in sequential block [D:/RCLabProjects/testing/testing.srcs/sources_1/new/alu_control.v:49]
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/RCLabProjects/testing/testing.srcs/sources_1/new/control.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module control
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'ctrll' is not allowed [D:/RCLabProjects/testing/testing.srcs/sources_1/new/control.v:36]
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/RCLabProjects/testing/testing.srcs/sources_1/new/dff.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module dff
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/RCLabProjects/testing/testing.srcs/sources_1/new/instruction_decoder.v" into library xil_defaultlib
@@ -20,13 +23,14 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "D:/RCLabProjects/testing/testing.sr
 INFO: [VRFC 10-311] analyzing module mux4
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/RCLabProjects/testing/testing.srcs/sources_1/new/pc_block.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module pc_block
-WARNING: [VRFC 10-3676] redeclaration of ansi port 'pc' is not allowed [D:/RCLabProjects/testing/testing.srcs/sources_1/new/pc_block.v:21]
-WARNING: [VRFC 10-3676] redeclaration of ansi port 'opcode' is not allowed [D:/RCLabProjects/testing/testing.srcs/sources_1/new/pc_block.v:22]
-WARNING: [VRFC 10-3676] redeclaration of ansi port 'reg1' is not allowed [D:/RCLabProjects/testing/testing.srcs/sources_1/new/pc_block.v:23]
-WARNING: [VRFC 10-3676] redeclaration of ansi port 'func3' is not allowed [D:/RCLabProjects/testing/testing.srcs/sources_1/new/pc_block.v:24]
-WARNING: [VRFC 10-3676] redeclaration of ansi port 'reg_data1' is not allowed [D:/RCLabProjects/testing/testing.srcs/sources_1/new/pc_block.v:25]
-WARNING: [VRFC 10-3676] redeclaration of ansi port 'control' is not allowed [D:/RCLabProjects/testing/testing.srcs/sources_1/new/pc_block.v:26]
-WARNING: [VRFC 10-3676] redeclaration of ansi port 'reg_write' is not allowed [D:/RCLabProjects/testing/testing.srcs/sources_1/new/pc_block.v:28]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'pc' is not allowed [D:/RCLabProjects/testing/testing.srcs/sources_1/new/pc_block.v:23]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'opcode' is not allowed [D:/RCLabProjects/testing/testing.srcs/sources_1/new/pc_block.v:24]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'reg1' is not allowed [D:/RCLabProjects/testing/testing.srcs/sources_1/new/pc_block.v:25]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'func3' is not allowed [D:/RCLabProjects/testing/testing.srcs/sources_1/new/pc_block.v:26]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'reg_data1' is not allowed [D:/RCLabProjects/testing/testing.srcs/sources_1/new/pc_block.v:27]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'control' is not allowed [D:/RCLabProjects/testing/testing.srcs/sources_1/new/pc_block.v:28]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'reg_write' is not allowed [D:/RCLabProjects/testing/testing.srcs/sources_1/new/pc_block.v:30]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'imm_i_ex' is not allowed [D:/RCLabProjects/testing/testing.srcs/sources_1/new/pc_block.v:32]
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/RCLabProjects/testing/testing.srcs/sources_1/new/pc_comb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module pc_comb
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/RCLabProjects/testing/testing.srcs/sources_1/new/signextender.v" into library xil_defaultlib
@@ -35,3 +39,5 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "D:/RCLabProjects/testing/testing.sr
 INFO: [VRFC 10-311] analyzing module signextender2
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/RCLabProjects/testing/testing.srcs/sim_1/new/pc_test.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module pc_test
+INFO: [VRFC 10-2458] undeclared symbol read, assumed default net type wire [D:/RCLabProjects/testing/testing.srcs/sim_1/new/pc_test.v:24]
+INFO: [VRFC 10-2458] undeclared symbol write, assumed default net type wire [D:/RCLabProjects/testing/testing.srcs/sim_1/new/pc_test.v:24]

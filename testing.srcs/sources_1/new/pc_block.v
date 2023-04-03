@@ -13,9 +13,11 @@ output [4:0] alu_ctrl,
 output [6:0] opcode,func7,
 output [2:0] func3,alu_op,
 output [31:0] reg_write,
-output [1:0] ctrli,
+output [1:0] ctrli,ctrlk,ctrll,
 output ctrlj,
-output [31:0] shamt
+output [31:0] shamt,
+output read,write,
+output [31:0] mem_data,imm_i_ex,load_data
 
     );
     wire [31:0] pc_incr,pc,inst_code;
@@ -35,13 +37,14 @@ output [31:0] shamt
     signextender ex(imm_j,imm_j_ex);
     signextender2 ex2(imm_i,imm_i_ex);
     RegisterFile registerFile(reg1,reg2,reg3,reg_write,reg_data1,reg_data2,out,regwrite,reset);
-    control ctrl(opcode,func7,func3,clk,alu_op,control,regwrite,ctrlj,ctrli);
+    control ctrl(opcode,func7,func3,clk,alu_op,control,regwrite,ctrlj,ctrli,ctrlk,ctrll,read,write);
     alu_control alu_ct(alu_op,func3,func7[5],alu_ctrl);
     mux2 m1(alu1,pc,reg_data1,ctrlj);
     mux4 m2(alu2,imm_j_ex,reg_data2,imm_i_ex,shamt,ctrli);
     ALU alu(alu1,alu2,alu_ctrl,write_data,zero_flag);
-    
-    mux2 m3(reg_write,pc+32'h00000004,write_data,ctrlj);
+    DataMemory data_mem(clk,reset,write_data,reg_data2,write,read,mem_data);
+    mux4 m4(load_data,{{24{1'b0}},mem_data[7:0]},{{16{1'b0}},mem_data[15:0]},mem_data,32'h0000_0000,ctrll);
+    mux4 m3(reg_write,pc+32'h00000004,write_data,load_data,32'h0000_0000,ctrlk);
 endmodule
 
 

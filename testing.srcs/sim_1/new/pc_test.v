@@ -15,11 +15,13 @@ module pc_test(
     wire [6:0] opcode,func7;
     wire [2:0] func3,alu_op;
     wire [31:0] reg_write;
-    wire [1:0] ctrli;
+    wire [1:0] ctrli,ctrlk,ctrll;
     wire ctrlj;
     wire [31:0] shamt;
+    wire [31:0] mem_data,imm_i_ex,load_data;
     pc_block pcc(reset,clk,reg1,reg2,reg3,reg_data1,reg_data2,out,pc,write_data,inst_code,zero_flag,
-    regwrite,control1,alu_ctrl,opcode,func7,func3,alu_op,reg_write,ctrli,ctrlj,shamt);
+    regwrite,control1,alu_ctrl,opcode,func7,func3,alu_op,reg_write,ctrli,ctrlk,ctrll,ctrlj,shamt
+    ,read,write,mem_data,imm_i_ex,load_data);
     
     initial 
     begin

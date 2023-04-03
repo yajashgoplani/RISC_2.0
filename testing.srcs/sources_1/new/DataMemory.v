@@ -21,30 +21,41 @@
 
 
 module DataMemory(
-input clock,
+input clock,reset,
 input [31:0]address,
 input [31:0]write_data,
 input MemWrite,
 input MemRead,
 output reg [31:0]Data
     );
-    reg [7:0] memory[127:0];   // byte organised memory with 129 locations
+    reg [31:0] memory[127:0];   
     integer i;
-       
-    initial 
+   
+    always @(reset)
     begin
-         
-          for(i=0;i<32;i=i+1)  
-                memory[i]=32'd0;
-    end
-           
+        if(reset==1'b0)
+        begin
+            for(i=0;i<128;i=i+1)  
+                memory[i]=32'd0; 
+        end 
+        memory[0]=32'h1111_1111;
+        memory[1]=32'h2222_2222;
+        memory[2]=32'h3333_3333;
+        memory[3]=32'h4444_4444;
+        memory[4]=32'h5555_5555;
+        memory[5]=32'h6666_6666;
+        memory[6]=32'h7777_7777;
+        memory[7]=32'h8888_8888;
+        
+    end                
     always @(posedge clock)begin
         if (MemWrite == 1)
             memory[address] <= write_data;
            end
-    always @(*) begin
+    always @(MemRead,address,write_data) begin
         if(MemRead==1)
             Data = memory[address];
+        else Data<=32'hZZZZ_ZZZZ;    
     end
    
 endmodule

@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Apr  3 12:31:33 2023
+# Process ID: 52292
+# Current directory: D:/RCLabProjects/testing
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent26680 D:\RCLabProjects\testing\testing.xpr
+# Log file: D:/RCLabProjects/testing/vivado.log
+# Journal file: D:/RCLabProjects/testing\vivado.jou
+#-----------------------------------------------------------sstart_guioopen_project D:/RCLabProjects/testing/testing.xpruupdate_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+source pc_test.tcl
+close_sim
+launch_simulation
+source pc_test.tcl
+close_sim
+launch_simulation
+source pc_test.tcl
+close_sim
