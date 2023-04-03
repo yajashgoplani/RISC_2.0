@@ -12,7 +12,10 @@ output [1:0] control,
 output [4:0] alu_ctrl,
 output [6:0] opcode,func7,
 output [2:0] func3,alu_op,
-output [31:0] reg_write
+output [31:0] reg_write,
+output [1:0] ctrli,
+output ctrlj,
+output [31:0] shamt
 
     );
     wire [31:0] pc_incr,pc,inst_code;
@@ -23,17 +26,19 @@ output [31:0] reg_write
     wire [1:0] control;
     wire [19:0] imm_j;
     wire [31:0] imm_j_ex,alu1,alu2,reg_write;
-    
+    wire [11:0] imm_i;
+    wire [31:0] imm_i_ex;
     pc_comb comb(control,pc,write_data,pc_incr);
     dff d(pc_incr,clk,reset,pc);
     Instruction_mem mem(pc,reset,inst_code);
-    instruction_decoder decode(inst_code,opcode,reg1,reg2,reg3,func7,func3,imm_j);
+    instruction_decoder decode(inst_code,opcode,reg1,reg2,reg3,func7,func3,imm_j,imm_i,shamt);
     signextender ex(imm_j,imm_j_ex);
+    signextender2 ex2(imm_i,imm_i_ex);
     RegisterFile registerFile(reg1,reg2,reg3,reg_write,reg_data1,reg_data2,out,regwrite,reset);
-    control ctrl(opcode,func7,func3,clk,alu_op,control,regwrite,ctrlj);
+    control ctrl(opcode,func7,func3,clk,alu_op,control,regwrite,ctrlj,ctrli);
     alu_control alu_ct(alu_op,func3,func7[5],alu_ctrl);
     mux2 m1(alu1,pc,reg_data1,ctrlj);
-    mux2 m2(alu2,imm_j_ex,reg_data2,ctrlj);
+    mux4 m2(alu2,imm_j_ex,reg_data2,imm_i_ex,shamt,ctrli);
     ALU alu(alu1,alu2,alu_ctrl,write_data,zero_flag);
     
     mux2 m3(reg_write,pc+32'h00000004,write_data,ctrlj);

@@ -15,7 +15,11 @@ module pc_test(
     wire [6:0] opcode,func7;
     wire [2:0] func3,alu_op;
     wire [31:0] reg_write;
-    pc_block pcc(reset,clk,reg1,reg2,reg3,reg_data1,reg_data2,out,pc,write_data,inst_code,zero_flag,regwrite,control1,alu_ctrl,opcode,func7,func3,alu_op,reg_write);
+    wire [1:0] ctrli;
+    wire ctrlj;
+    wire [31:0] shamt;
+    pc_block pcc(reset,clk,reg1,reg2,reg3,reg_data1,reg_data2,out,pc,write_data,inst_code,zero_flag,
+    regwrite,control1,alu_ctrl,opcode,func7,func3,alu_op,reg_write,ctrli,ctrlj,shamt);
     
     initial 
     begin
@@ -29,7 +33,7 @@ module pc_test(
         #32 reset=1;//#2 regwrite=1;
        // #5 regwrite<=0;
        // #30 control=0;
-        #120 $finish;
+        #140 $finish;
     end    
 //    wire [31:0] out;
 //    reg [19:0] imm;

@@ -44,9 +44,10 @@ module ALU (
         5'b00101: alu_result = in1>>in2;
         5'b00110: alu_result = in1*in2;
         5'b00111: alu_result = in1^in2;
-            5'b11111: alu_result= 32'hZZZZZZZZ;
+        5'b11111: alu_result= 32'hZZZZZZZZ;
+        5'b01001: alu_result = in1>>>in2;
         endcase
-
+        
         // Setting Zero_flag if ALU_result is zero
         if (alu_result == 0)
             zero_flag = 1'b1;

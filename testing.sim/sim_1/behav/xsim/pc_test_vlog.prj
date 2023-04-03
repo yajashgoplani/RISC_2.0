@@ -12,6 +12,7 @@ verilog xil_defaultlib  \
 "../../../../testing.srcs/sources_1/new/pc_block.v" \
 "../../../../testing.srcs/sources_1/new/pc_comb.v" \
 "../../../../testing.srcs/sources_1/new/signextender.v" \
+"../../../../testing.srcs/sources_1/new/signextender2.v" \
 "../../../../testing.srcs/sim_1/new/pc_test.v" \
 
 # compile glbl module

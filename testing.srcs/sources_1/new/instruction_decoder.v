@@ -21,7 +21,11 @@
 
 
 module instruction_decoder(
-    input [31:0] instruct,output [6:0] opcode, [4:0] reg1,[4:0] reg2, [4:0] reg3,[6:0] func7,[2:0] func3,[19:0] imm_j
+    input [31:0] instruct,
+    output [6:0] opcode, [4:0] reg1,[4:0] reg2, [4:0] reg3,[6:0] func7,[2:0] func3,[19:0] imm_j,
+    output [11:0] imm_i,
+    output [31:0]shamt 
+    
     );
     assign opcode=instruct[6:0];
     assign reg3= instruct[11:7];
@@ -30,4 +34,6 @@ module instruction_decoder(
     assign reg2= instruct[24:20];
     assign func7= instruct[31:25];
     assign imm_j= {instruct[31],instruct[19:12],instruct[20],instruct[30:21]};
+    assign imm_i= instruct[31:20];
+    assign shamt= {{27{1'b0}},instruct[24:20]};
 endmodule

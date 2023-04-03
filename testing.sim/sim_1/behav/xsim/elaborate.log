@@ -14,6 +14,7 @@ Compiling module xil_defaultlib.dff
 Compiling module xil_defaultlib.Instruction_mem
 Compiling module xil_defaultlib.instruction_decoder
 Compiling module xil_defaultlib.signextender
+Compiling module xil_defaultlib.signextender2
 Compiling module xil_defaultlib.RegisterFile
 Compiling module xil_defaultlib.control
 Compiling module xil_defaultlib.alu_control

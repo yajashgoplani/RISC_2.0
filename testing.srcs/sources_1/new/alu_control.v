@@ -38,11 +38,22 @@ module alu_control(
             4'b0101: alu_ctrl=5'b00101;   //srl
             4'b0111: alu_ctrl=5'b00000;   //and
             4'b0110: alu_ctrl=5'b00001;   //or
+            4'b1101: alu_ctrl=5'b01001;   //SRA
             endcase;
         end
         else if(alu_op==3'b001)
         begin
             alu_ctrl=5'b00010;
+        end    
+        else if(alu_op==3'b010)
+        begin
+        case(func3)
+            3'b000: alu_ctrl=5'b00010;   //add
+            3'b010: alu_ctrl=5'b01000;   //slt
+            3'b100: alu_ctrl=5'b00111;   //xor
+            3'b111: alu_ctrl=5'b00000;   //and
+            3'b110: alu_ctrl=5'b00001;   //or
+            endcase;
         end    
         else if(alu_op==3'b111)
         begin
